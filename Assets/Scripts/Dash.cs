@@ -28,6 +28,7 @@ public class Dash : MonoBehaviour
         if (isDashing)
         {
             Dashing();
+            Dashing();
         }
         else
         {
