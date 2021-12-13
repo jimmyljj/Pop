@@ -39,7 +39,7 @@ public class Dash : MonoBehaviour
     private void Dashing()
     {
         rig.velocity = Vector3.zero;
-        rig.AddForce(transform.forward * dashSpeed, ForceMode.Impulse);
+        rig.AddForce(transform.forward * dashSpeed, ForceMode.Force);
         isDashing = false;
 
         CancelInvoke("ResetSpeed");
