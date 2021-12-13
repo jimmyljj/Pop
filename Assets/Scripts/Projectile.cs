@@ -51,10 +51,7 @@ public class Projectile : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if (collision.transform.tag == "Obstacles")
-        {
-            Destroy(this.gameObject);
-        }
+        if (collision.transform.tag == "Obstacles") { Destroy(this.gameObject); }
     }
 
 

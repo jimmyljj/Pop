@@ -59,8 +59,7 @@ public class Grenade : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "Enemy" ||
-            collision.transform.tag == "Obstacles")
+        if (collision.transform.tag == "Enemy" || collision.transform.tag == "Obstacles")
         {
             CancelInvoke("Explode");
             Explode();

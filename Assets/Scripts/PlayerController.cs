@@ -7,11 +7,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private float movementSpeed;
+    private Rigidbody rb;
     public Camera _camera;
     
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -25,7 +26,6 @@ public class PlayerController : MonoBehaviour
     {
         float _horizontal = Input.GetAxis("Horizontal");
         float _vertical = Input.GetAxis("Vertical");
-
         Vector3 _movement = new Vector3(_horizontal, 0, _vertical);
         transform.Translate(_movement * movementSpeed * Time.deltaTime, Space.World);
     }
