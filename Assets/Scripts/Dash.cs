@@ -23,7 +23,7 @@ public class Dash : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         isDashing = true;
     }
-    private void FixedUpdate()s
+    private void FixedUpdate()
     {
         if (isDashing)
         {
