@@ -6,6 +6,7 @@ public class ChanceLootDrop : MonoBehaviour
 {
     [System.Serializable]
     public class DropCurrency
+        ///
     {
         public string name;
         public GameObject item;
