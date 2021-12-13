@@ -23,11 +23,10 @@ public class Dash : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         isDashing = true;
     }
-    private void FixedUpdate()
+    private void FixedUpdate()s
     {
         if (isDashing)
         {
-            Dashing();
             Dashing();
         }
         else
